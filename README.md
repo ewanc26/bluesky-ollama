@@ -226,3 +226,7 @@ This project combines ideas from:
 ## Disclaimer
 
 This bot generates content using AI. While efforts are made to keep content appropriate, the generated posts may not always be perfect. Monitor the bot's output regularly.
+
+## ☕ Support
+
+If you found this useful, consider [buying me a ko-fi](https://ko-fi.com/ewancroft)!
