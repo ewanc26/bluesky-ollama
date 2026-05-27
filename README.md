@@ -2,6 +2,8 @@
 
 An AI-powered Bluesky bot that uses Ollama to generate posts based on content from a source account. This project combines the Bluesky API integration from [bluesky-markov](https://github.com/ewanc26/bluesky-markov) with the Ollama LLM capabilities from [llm-analyser](https://github.com/ewanc26/llm-analyser).
 
+> 🧶 Also available on [Tangled](https://tangled.org/ewancroft.uk/bluesky-ollama)
+
 ## Features
 
 - Fetches posts from a specified source Bluesky account
@@ -46,7 +48,6 @@ An AI-powered Bluesky bot that uses Ollama to generate posts based on content fr
    ```
 
 4. **Install and set up Ollama:**
-
    - Download and install Ollama from [ollama.com](https://ollama.com/)
    - Pull a model (default is llama3.2):
      ```bash
@@ -78,6 +79,7 @@ python src/main.py
 ```
 
 The bot will:
+
 1. Log into both source and destination accounts
 2. Fetch recent posts from the source account
 3. Generate a new post using Ollama based on the source content
@@ -146,6 +148,7 @@ bluesky-ollama/
 ## Logging
 
 All logs are stored in `log/general.log` with detailed information about:
+
 - Login attempts and successes
 - Post fetching and generation
 - API interactions
@@ -179,6 +182,7 @@ All logs are stored in `log/general.log` with detailed information about:
 ### Rate Limiting
 
 The bot automatically complies with Bluesky's rate limits:
+
 - **5,000 points per hour** (creating a post = 3 points)
 - **35,000 points per day**
 - Maximum ~1,666 posts per hour
@@ -189,6 +193,7 @@ The bot tracks posting history and will automatically wait if limits are approac
 ### Content Safety
 
 The bot includes multiple layers of content validation:
+
 - Rejects empty or placeholder content
 - Prevents repetitive or spam-like posts
 - Enforces minimum and maximum length requirements
@@ -198,14 +203,17 @@ The bot includes multiple layers of content validation:
 ## Troubleshooting
 
 ### "Ollama not responding"
+
 - Ensure Ollama is running: `ollama serve`
 - Check if the model is pulled: `ollama list`
 
 ### "Login failed"
+
 - Verify you're using app-specific passwords, not your main password
 - Check that handles include the full domain (e.g., `user.bsky.social`)
 
 ### "No posts generated"
+
 - Ensure the source account has posts to analyze
 - Check the logs in `log/general.log` for detailed error information
 
@@ -220,6 +228,7 @@ This project is licensed under the GNU Affero General Public License v3.0. See t
 ## Credits
 
 This project combines ideas from:
+
 - [bluesky-markov](https://github.com/ewanc26/bluesky-markov) - Bluesky API integration
 - [llm-analyser](https://github.com/ewanc26/llm-analyser) - Ollama integration
 
