@@ -1,8 +1,17 @@
+"""
+Ollama post generation for the bluesky-ollama bot.
+
+Fetches existing posts from a Bluesky account, then uses a local Ollama model
+to generate new content in a matching style and tone.
+"""
+
 import logging
 import os
 import ollama
 from clean import clean_content, get_post_text
 from bsky_api import retrieve_posts
+
+# ── Logging Setup ──────────────────────────────────────────────────────────────
 
 # Ensure the log directory exists
 log_directory = 'log'
@@ -15,6 +24,8 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+# ── Post Fetcher ───────────────────────────────────────────────────────────────
 
 def get_account_posts(client, client_did, limit=100):
     """Fetch and clean posts from a Bluesky account."""
@@ -35,6 +46,8 @@ def get_account_posts(client, client_did, limit=100):
 
     logging.info(f"Retrieved and cleaned {len(cleaned_posts)} posts from account.")
     return cleaned_posts
+
+# ── Content Generation ─────────────────────────────────────────────────────────
 
 def generate_post(posts, model_name, char_limit):
     """

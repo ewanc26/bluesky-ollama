@@ -13,6 +13,14 @@ from main import validate_content
 def test_validation():
     """Test various content validation scenarios."""
     
+    # ── Test Cases ───────────────────────────────────────────────────────────
+    # Expectations based on validate_content rules in main.py:
+    #   - Length: 10-280 chars
+    #   - No repetitive phrases (count > 2)
+    #   - No placeholder text (lorem ipsum, todo, xxx, etc.)
+    #   - Max 3 of ! or ?, max 2 URLs
+    #   - No all-caps for posts over 20 chars
+
     test_cases = [
         # (content, should_pass, description)
         ("This is a normal post about technology", True, "Valid normal post"),
@@ -41,10 +49,12 @@ def test_validation():
     
     print("🧪 Running Content Validation Tests\n")
     print("=" * 70)
-    
+
+    # ── Runner ───────────────────────────────────────────────────────────────
+
     passed = 0
     failed = 0
-    
+
     for content, should_pass, description in test_cases:
         is_valid, error_msg = validate_content(content, char_limit=280)
         

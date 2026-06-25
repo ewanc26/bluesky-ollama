@@ -22,7 +22,9 @@ from collections import deque
 
 class RateLimiter:
     """Rate limiter to respect Bluesky's API limits."""
-    
+
+    # ── Setup ─────────────────────────────────────────────────────────────────
+
     def __init__(self, hourly_limit=100, daily_limit=500):
         """
         Initialize rate limiter.
@@ -45,15 +47,16 @@ class RateLimiter:
         now = datetime.now()
         hour_ago = now - timedelta(hours=1)
         day_ago = now - timedelta(days=1)
-        
-        # Remove hourly operations older than 1 hour
+
+        # Pop expired hourly and daily entries from the front of the deque
         while self.hourly_operations and self.hourly_operations[0] < hour_ago:
             self.hourly_operations.popleft()
-        
-        # Remove daily operations older than 1 day
+
         while self.daily_operations and self.daily_operations[0] < day_ago:
             self.daily_operations.popleft()
-    
+
+    # ── Check & Record ─────────────────────────────────────────────────────────
+
     def can_proceed(self):
         """
         Check if we can proceed with an operation.
@@ -87,6 +90,8 @@ class RateLimiter:
             f"{daily_count}/{self.daily_limit} (day)"
         )
     
+    # ── Monitoring ──────────────────────────────────────────────────────────────
+
     def get_stats(self):
         """Get current rate limit statistics."""
         self._clean_old_operations()

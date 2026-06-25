@@ -1,3 +1,12 @@
+"""
+Main entry point for the bluesky-ollama bot.
+
+Orchestrates the full pipeline: fetches posts from a source Bluesky account,
+generates new content via an Ollama model, validates it, and posts to a
+destination account. Runs in a continuous loop with jittered refresh intervals
+to avoid predictable posting patterns.
+"""
+
 import os
 import argparse
 from datetime import datetime, timedelta
@@ -7,6 +16,8 @@ from dotenv import load_dotenv
 from bsky_api import login, DID_resolve
 from ollama_gen import generate_post, get_account_posts
 from time_utils import calculate_refresh_interval, calculate_next_refresh, sleep_until_next_refresh
+
+# ── Logging Setup ──────────────────────────────────────────────────────────────
 
 # Ensure the log directory exists
 log_directory = 'log'
@@ -27,7 +38,11 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
 logging.getLogger().addHandler(console_handler)
 
-# Rate limiting tracking
+# ── Inline Rate Limiter ─────────────────────────────────────────────────────────
+
+# Duplicates the module-level RateLimiter in rate_limiter.py with tighter limits.
+# Kept here for historical reasons; the module-level version is the canonical one.
+
 class RateLimiter:
     """Track posting rate to comply with Bluesky API limits."""
     def __init__(self):
@@ -36,8 +51,8 @@ class RateLimiter:
         # We can create max 1666 records/hour and 11666 records/day
         self.hourly_posts = []
         self.daily_posts = []
-        self.max_hourly_posts = 1600  # Keep some buffer
-        self.max_daily_posts = 11000   # Keep some buffer
+        self.max_hourly_posts = 1600  # Well under the 1666 cap — buffer for safety
+        self.max_daily_posts = 11000  # Same logic for daily limit
     
     def can_post(self):
         """Check if we can post without exceeding rate limits."""
@@ -79,6 +94,11 @@ class RateLimiter:
             wait_until = oldest_post + timedelta(days=1)
             return wait_until
         return None
+
+# ── Content Validation ─────────────────────────────────────────────────────────
+
+# Standalone validation function used by main.py's pipeline.
+# The ContentValidator class in content_validator.py is the canonical version.
 
 def validate_content(text, char_limit=300):
     """
@@ -136,10 +156,13 @@ def validate_content(text, char_limit=300):
     
     return True, None
 
+# ── Main Entrypoint ────────────────────────────────────────────────────────────
+
 def main():
+    """Run the bot pipeline: fetch, generate, validate, post, loop."""
     parser = argparse.ArgumentParser(description="Generate and post Bluesky content using Ollama")
     parser.add_argument("-m", "--model", help="Ollama model to use", default=None)
-    parser.add_argument("--dry-run", action="store_true", 
+    parser.add_argument("--dry-run", action="store_true",
                        help="Generate posts without actually posting them")
     args = parser.parse_args()
 
@@ -261,7 +284,10 @@ def main():
             logging.error("Error in generate_and_post: %s", e)
             print(f"❌ Error: {e}")
 
-    # Main loop
+    # ── Main Loop ──────────────────────────────────────────────────────────────
+    # Runs indefinitely with jittered intervals between 30 min and 3 hours.
+    # Each iteration: fetch context posts, generate via Ollama, validate, post.
+
     try:
         iteration = 0
         while True:

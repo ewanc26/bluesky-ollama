@@ -1,6 +1,15 @@
+"""
+Bluesky API wrapper for the bluesky-ollama bot.
+
+Handles authentication, DID resolution, and post retrieval from Bluesky
+accounts using the atproto SDK.
+"""
+
 from atproto import IdResolver, Client
 import os
 import logging
+
+# ── Logging Setup ──────────────────────────────────────────────────────────────
 
 # Ensure the log directory exists
 log_directory = 'log'
@@ -13,6 +22,8 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+# ── Authentication ─────────────────────────────────────────────────────────────
 
 def login(handle_env_var, app_pass_env_var):
     """Login to Bluesky account using environment variables."""
@@ -37,6 +48,8 @@ def login(handle_env_var, app_pass_env_var):
         logging.exception("An error occurred during login: %s", e)
         quit(1)
 
+# ── DID Resolution ─────────────────────────────────────────────────────────────
+
 def DID_resolve(handle):
     """Resolve DID (Decentralized Identifier) for a given handle."""
     try:
@@ -56,6 +69,8 @@ def DID_resolve(handle):
     except Exception as e:
         logging.exception("An error occurred while resolving DID: %s", e)
         return None
+
+# ── Post Retrieval ─────────────────────────────────────────────────────────────
 
 def retrieve_posts(client, client_did, limit=100):
     """Retrieve posts from a Bluesky account with pagination."""

@@ -1,7 +1,16 @@
+"""
+Content cleaning for the bluesky-ollama bot.
+
+Strips HTML, decodes entities, removes usernames and emoji shortcodes
+from Bluesky posts before they're used as context for generation.
+"""
+
 from html import unescape
 import re
 import logging
 import os
+
+# ── Logging Setup ──────────────────────────────────────────────────────────────
 
 # Ensure the log directory exists
 log_directory = 'log'
@@ -14,6 +23,8 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+# ── Content Cleaning ───────────────────────────────────────────────────────────
 
 def clean_content(content):
     """Clean and preprocess content from Bluesky posts."""
@@ -45,6 +56,8 @@ def clean_content(content):
     logging.debug("Final cleaned content: %s", cleaned_content)
 
     return cleaned_content
+
+# ── Text Extraction ────────────────────────────────────────────────────────────
 
 def get_post_text(post):
     """Extract text from a post object."""

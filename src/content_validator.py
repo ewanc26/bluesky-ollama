@@ -10,7 +10,9 @@ import logging
 
 class ContentValidator:
     """Validates generated content before posting."""
-    
+
+    # ── Setup ─────────────────────────────────────────────────────────────────
+
     def __init__(self, char_limit=280, min_length=10):
         """
         Initialize content validator.
@@ -38,13 +40,18 @@ class ContentValidator:
         
         logging.info(f"Content validator initialized: {min_length}-{char_limit} chars")
     
+    # ── Validation ──────────────────────────────────────────────────────────────
+
     def validate(self, content):
         """
         Validate content for posting.
-        
+
+        Runs through a gauntlet of checks: length, repetition, spam keywords,
+        harmful language, error message detection, and URL-only content.
+
         Args:
             content: The text content to validate
-            
+
         Returns:
             tuple: (is_valid, reason) where is_valid is bool and reason is str
         """
@@ -90,6 +97,8 @@ class ContentValidator:
         # All checks passed
         return True, "Content validated successfully"
     
+    # ── Individual Checkers ─────────────────────────────────────────────────────
+
     def _is_repetitive(self, content, threshold=0.5):
         """Check if content has too many repeated characters."""
         if len(content) < 10:
@@ -138,6 +147,8 @@ class ContentValidator:
         url_pattern = r'^https?://[^\s]+$'
         return bool(re.match(url_pattern, content.strip()))
     
+    # ── Sanitization ────────────────────────────────────────────────────────────
+
     def sanitize(self, content):
         """
         Sanitize content by removing or fixing common issues.
@@ -176,6 +187,8 @@ class ContentValidator:
         
         return sanitized
     
+    # ── Stats ───────────────────────────────────────────────────────────────────
+
     def get_content_stats(self, content):
         """Get statistics about the content."""
         return {

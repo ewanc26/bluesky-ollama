@@ -1,8 +1,18 @@
+"""
+Time utilities for the bluesky-ollama bot.
+
+Provides jittered scheduling between iterations and human-readable
+time formatting. Random intervals avoid predictable posting patterns
+that could trigger rate limits or spam detection.
+"""
+
 import random
 from datetime import datetime, timedelta
 import time
 import logging
 import os
+
+# ── Logging Setup ──────────────────────────────────────────────────────────────
 
 # Ensure the log directory exists
 log_directory = 'log'
@@ -16,8 +26,14 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+# ── Scheduling ─────────────────────────────────────────────────────────────────
+
 def calculate_refresh_interval():
-    """Calculate a random refresh interval between 30 minutes to 3 hours."""
+    """Generate a random refresh interval between 30 minutes and 3 hours.
+
+    Jitter prevents predictable posting patterns that could trigger
+    automated spam detection on Bluesky's side.
+    """
     refresh_interval = random.randint(1800, 10800)  # 30 min to 3 hours in seconds
     logging.debug("Calculated refresh interval: %d seconds", refresh_interval)
     return refresh_interval
