@@ -1,0 +1,12 @@
+/Volumes/Storage/Developer/Git/bluesky-ollama/target/debug/deps/async_lock-77c5c3b90df453f0.d: /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/lib.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/barrier.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/mutex.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/once_cell.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock/futures.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock/raw.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/semaphore.rs
+
+/Volumes/Storage/Developer/Git/bluesky-ollama/target/debug/deps/libasync_lock-77c5c3b90df453f0.rmeta: /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/lib.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/barrier.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/mutex.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/once_cell.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock/futures.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock/raw.rs /Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/semaphore.rs
+
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/lib.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/barrier.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/mutex.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/once_cell.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock/futures.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/rwlock/raw.rs:
+/Users/ewan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-lock-3.4.2/src/semaphore.rs:

@@ -1,0 +1,24 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 13725889348090124432,
+  "profile": 3033921117576893,
+  "path": 8004186056768200350,
+  "deps": [
+    [4289358735036141001, "proc_macro2", false, 4353485238853415759],
+    [10420560437213941093, "syn", false, 5210143786901699224],
+    [13111758008314797071, "quote", false, 15226254820181190633]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/ref-cast-impl-20d62e97b08b659c/dep-lib-ref_cast_impl",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

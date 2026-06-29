@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[\"default\", \"std\"]",
+  "target": 4664077033567223684,
+  "profile": 8276155916380437441,
+  "path": 10751757539840821918,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/base-x-bba6793473e44b98/dep-lib-base_x",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"default\", \"helpers\"]",
+  "declared_features": "[\"default\", \"helpers\"]",
+  "target": 532956966927159113,
+  "profile": 8276155916380437441,
+  "path": 1835931035247786326,
+  "deps": [[9920160603812655370, "psl_types", false, 13086298299557746092]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/psl-21956ded7c65bb85/dep-lib-psl",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

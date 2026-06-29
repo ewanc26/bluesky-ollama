@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"alloc\", \"default\", \"std\"]",
+  "declared_features": "[\"alloc\", \"default\", \"std\", \"web\", \"web-time\"]",
+  "target": 10881799483833257506,
+  "profile": 18120794694162342111,
+  "path": 15615319368402841803,
+  "deps": [[6971842703803247244, "zeroize", false, 2192106108204486850]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/rustls-pki-types-16d4d0068ffa9b4f/dep-lib-rustls_pki_types",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

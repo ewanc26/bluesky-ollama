@@ -1,0 +1,25 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"gzip\", \"tokio\"]",
+  "declared_features": "[\"all\", \"all-algorithms\", \"all-implementations\", \"brotli\", \"bzip2\", \"deflate\", \"deflate64\", \"futures-io\", \"gzip\", \"lz4\", \"lzma\", \"tokio\", \"xz\", \"xz-parallel\", \"xz2\", \"zlib\", \"zstd\", \"zstdmt\"]",
+  "target": 7068030942456847288,
+  "profile": 5146425466815232796,
+  "path": 7521323805778196731,
+  "deps": [
+    [169586757592915741, "compression_core", false, 11440850914921965130],
+    [2251399859588827949, "pin_project_lite", false, 14528914888267538371],
+    [9394460649638301237, "tokio", false, 3027258060152097377],
+    [12684335091102192662, "compression_codecs", false, 9287669244713105164]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/async-compression-917160f4ef610931/dep-lib-async_compression",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

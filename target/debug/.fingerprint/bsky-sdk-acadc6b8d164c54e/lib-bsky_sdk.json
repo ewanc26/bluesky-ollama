@@ -1,0 +1,32 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"atrium-xrpc-client\", \"default\", \"default-client\", \"psl\", \"rich-text\", \"unicode-segmentation\"]",
+  "declared_features": "[\"atrium-xrpc-client\", \"config-toml\", \"default\", \"default-client\", \"psl\", \"rich-text\", \"toml\", \"unicode-segmentation\"]",
+  "target": 18139811819062604398,
+  "profile": 8276155916380437441,
+  "path": 581382756199055672,
+  "deps": [
+    [613246011889145985, "regex", false, 14454780762992850344],
+    [8008191657135824715, "thiserror", false, 10862460893898781809],
+    [8578586876803397814, "serde_json", false, 15485458804253716067],
+    [9339708857371862256, "trait_variant", false, 4584008576507047137],
+    [9615169738585985312, "psl", false, 10484242098088049781],
+    [12478428894219133322, "anyhow", false, 2586819503524188530],
+    [13548984313718623784, "serde", false, 8036415060051149022],
+    [15791033269118154745, "atrium_xrpc_client", false, 10099564232217337958],
+    [16117757646811882223, "chrono", false, 1521675819409105173],
+    [16161007493828171258, "atrium_api", false, 9977657542241505400],
+    [16198203750081063573, "unicode_segmentation", false, 3478137976483573643]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/bsky-sdk-acadc6b8d164c54e/dep-lib-bsky_sdk",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

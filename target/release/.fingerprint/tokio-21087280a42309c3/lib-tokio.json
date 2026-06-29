@@ -1,0 +1,29 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"bytes\", \"default\", \"fs\", \"full\", \"io-std\", \"io-util\", \"libc\", \"macros\", \"mio\", \"net\", \"parking_lot\", \"process\", \"rt\", \"rt-multi-thread\", \"signal\", \"signal-hook-registry\", \"socket2\", \"sync\", \"time\", \"tokio-macros\"]",
+  "declared_features": "[\"bytes\", \"default\", \"fs\", \"full\", \"io-std\", \"io-uring\", \"io-util\", \"libc\", \"macros\", \"mio\", \"net\", \"parking_lot\", \"process\", \"rt\", \"rt-multi-thread\", \"signal\", \"signal-hook-registry\", \"socket2\", \"sync\", \"taskdump\", \"test-util\", \"time\", \"tokio-macros\", \"tracing\", \"windows-sys\"]",
+  "target": 9605832425414080464,
+  "profile": 2186523573422907803,
+  "path": 18129267720152260355,
+  "deps": [
+    [260904210593906365, "tokio_macros", false, 2691695357170308393],
+    [2251399859588827949, "pin_project_lite", false, 14528914888267538371],
+    [2636299918121164457, "socket2", false, 12771070105881130123],
+    [3870702314125662939, "bytes", false, 17227777714198657549],
+    [6684496268350303357, "signal_hook_registry", false, 1995451348656300925],
+    [7098700569944897890, "libc", false, 10818499866568610630],
+    [9891842642156861908, "mio", false, 4428461881543511875],
+    [12459942763388630573, "parking_lot", false, 11615517223279844464]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/tokio-21087280a42309c3/dep-lib-tokio",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

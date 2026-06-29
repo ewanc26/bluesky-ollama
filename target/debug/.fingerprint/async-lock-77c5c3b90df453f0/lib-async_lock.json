@@ -1,0 +1,29 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"default\", \"std\"]",
+  "declared_features": "[\"default\", \"loom\", \"std\"]",
+  "target": 4686383084901058664,
+  "profile": 3883922691551601380,
+  "path": 11341615631663953647,
+  "deps": [
+    [2251399859588827949, "pin_project_lite", false, 8416501487167123957],
+    [14474722528862052230, "event_listener", false, 1656310303834176911],
+    [
+      17148897597675491682,
+      "event_listener_strategy",
+      false,
+      4972133267662535241
+    ]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/async-lock-77c5c3b90df453f0/dep-lib-async_lock",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"all\"]",
+  "declared_features": "[\"all\"]",
+  "target": 2270514485357617025,
+  "profile": 2040997289075261528,
+  "path": 317521520168238649,
+  "deps": [[7098700569944897890, "libc", false, 10818499866568610630]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/socket2-e16d85e10fd0345a/dep-lib-socket2",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

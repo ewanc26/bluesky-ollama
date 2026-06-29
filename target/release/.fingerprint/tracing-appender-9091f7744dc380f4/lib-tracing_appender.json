@@ -1,0 +1,26 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[\"parking_lot\"]",
+  "target": 6605997267809224014,
+  "profile": 2040997289075261528,
+  "path": 11427915559868405506,
+  "deps": [
+    [1069819339227574240, "symlink", false, 5620575126047320035],
+    [1881143456411861941, "time", false, 4312504386753099851],
+    [2448563160050429386, "thiserror", false, 1079944453487494047],
+    [5380358770761950913, "tracing_subscriber", false, 2079385439592848256],
+    [9727213718512686088, "crossbeam_channel", false, 15278542764524186342]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/tracing-appender-9091f7744dc380f4/dep-lib-tracing_appender",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

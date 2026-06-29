@@ -1,0 +1,23 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 4627734809393167086,
+  "profile": 2040997289075261528,
+  "path": 7455942629005323617,
+  "deps": [
+    [1162658772697993410, "const_str", false, 11451392322628953468],
+    [8687914980556468309, "match_lookup", false, 11936310683042285201]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/base256emoji-647ff87ea4cacebc/dep-lib-base256emoji",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 4187757914828338653,
+  "profile": 2040997289075261528,
+  "path": 9902076850473110915,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/symlink-492c0a57301d0c1f/dep-lib-symlink",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

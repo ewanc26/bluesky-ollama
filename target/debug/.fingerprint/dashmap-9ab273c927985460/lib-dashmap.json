@@ -1,0 +1,27 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[\"arbitrary\", \"inline\", \"raw-api\", \"rayon\", \"serde\", \"typesize\"]",
+  "target": 5088436540597359853,
+  "profile": 8276155916380437441,
+  "path": 11879440055856007721,
+  "deps": [
+    [2555121257709722468, "lock_api", false, 14224609670509113874],
+    [4468123440088164316, "crossbeam_utils", false, 430471452658480920],
+    [5855319743879205494, "once_cell", false, 7431432305600123893],
+    [6545091685033313457, "parking_lot_core", false, 4654896542111016901],
+    [7667230146095136825, "cfg_if", false, 10577300532016003864],
+    [13018563866916002725, "hashbrown", false, 14126051627287889730]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/dashmap-9ab273c927985460/dep-lib-dashmap",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

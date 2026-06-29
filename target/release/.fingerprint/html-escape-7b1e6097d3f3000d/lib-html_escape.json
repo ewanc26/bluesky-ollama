@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"default\", \"std\"]",
+  "declared_features": "[\"default\", \"std\"]",
+  "target": 11161312187990043961,
+  "profile": 2040997289075261528,
+  "path": 17934365203193339360,
+  "deps": [[10404452894800428214, "utf8_width", false, 16795765342575897566]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/html-escape-7b1e6097d3f3000d/dep-lib-html_escape",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

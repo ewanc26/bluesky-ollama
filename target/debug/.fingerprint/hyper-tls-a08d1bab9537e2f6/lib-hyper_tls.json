@@ -1,0 +1,29 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[\"alpn\", \"vendored\"]",
+  "target": 11005878871305885301,
+  "profile": 8276155916380437441,
+  "path": 12712670184307672837,
+  "deps": [
+    [784494742817713399, "tower_service", false, 13020825610137967],
+    [3035134586790830808, "hyper", false, 5926652835462579697],
+    [3870702314125662939, "bytes", false, 12580446274905498545],
+    [9144560277883153344, "native_tls", false, 10699333132515360059],
+    [9394460649638301237, "tokio", false, 9425023833564998054],
+    [11976082518617474977, "hyper_util", false, 7433181867035077275],
+    [12186126227181294540, "tokio_native_tls", false, 15349116383301882936],
+    [16900715236047033623, "http_body_util", false, 14306435038985367550]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/hyper-tls-a08d1bab9537e2f6/dep-lib-hyper_tls",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

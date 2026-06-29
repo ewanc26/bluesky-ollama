@@ -1,0 +1,24 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"log-tracer\", \"std\"]",
+  "declared_features": "[\"ahash\", \"default\", \"interest-cache\", \"log-tracer\", \"lru\", \"std\"]",
+  "target": 13317203838154184687,
+  "profile": 2040997289075261528,
+  "path": 8492313545220016461,
+  "deps": [
+    [5855319743879205494, "once_cell", false, 11737011476909976572],
+    [10554110433548904600, "log", false, 7598836177038373239],
+    [16023452927926505185, "tracing_core", false, 8981676757933678306]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/tracing-log-05931575b9520d2d/dep-lib-tracing_log",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

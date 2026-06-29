@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"default\", \"fallback\"]",
+  "declared_features": "[\"critical-section\", \"default\", \"disable-fiq\", \"fallback\", \"float\", \"force-amo\", \"require-cas\", \"s-mode\", \"serde\", \"std\", \"unsafe-assume-privileged\", \"unsafe-assume-single-core\"]",
+  "target": 17883862002600103897,
+  "profile": 12094868044634704651,
+  "path": 7457398205930335085,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/portable-atomic-cf4e19a31c0af35e/dep-build-script-build-script-build",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

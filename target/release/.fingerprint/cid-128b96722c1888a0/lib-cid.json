@@ -1,0 +1,26 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"alloc\", \"serde\", \"std\"]",
+  "declared_features": "[\"alloc\", \"arb\", \"default\", \"scale-codec\", \"serde\", \"serde-codec\", \"std\"]",
+  "target": 4167996846970047348,
+  "profile": 2040997289075261528,
+  "path": 14039891507941976758,
+  "deps": [
+    [1175149761572142958, "unsigned_varint", false, 7999346180784450285],
+    [2141868211121469509, "multihash", false, 10641296961370587716],
+    [13548984313718623784, "serde", false, 2204414781378124509],
+    [14765161193670195556, "serde_bytes", false, 17159904227505852905],
+    [17903380651903923124, "multibase", false, 6907831611502534498]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/cid-128b96722c1888a0/dep-lib-cid",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

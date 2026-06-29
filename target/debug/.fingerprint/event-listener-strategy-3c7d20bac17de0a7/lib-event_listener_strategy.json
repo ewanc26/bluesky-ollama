@@ -1,0 +1,23 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"std\"]",
+  "declared_features": "[\"default\", \"loom\", \"portable-atomic\", \"std\"]",
+  "target": 5996387411282892707,
+  "profile": 1603876366424117548,
+  "path": 9203744688266129242,
+  "deps": [
+    [2251399859588827949, "pin_project_lite", false, 8416501487167123957],
+    [14474722528862052230, "event_listener", false, 1656310303834176911]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/event-listener-strategy-3c7d20bac17de0a7/dep-lib-event_listener_strategy",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

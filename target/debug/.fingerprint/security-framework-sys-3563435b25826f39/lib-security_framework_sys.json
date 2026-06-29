@@ -1,0 +1,23 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"OSX_10_13\", \"default\"]",
+  "declared_features": "[\"OSX_10_10\", \"OSX_10_11\", \"OSX_10_12\", \"OSX_10_13\", \"OSX_10_14\", \"OSX_10_15\", \"OSX_10_9\", \"default\", \"macos-12\"]",
+  "target": 16383770981727416183,
+  "profile": 3257467264450303931,
+  "path": 2208670836679733775,
+  "deps": [
+    [7098700569944897890, "libc", false, 132043897042255649],
+    [12589608519315293066, "core_foundation_sys", false, 13703419187351498071]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/security-framework-sys-3563435b25826f39/dep-lib-security_framework_sys",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

@@ -1,0 +1,23 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[]",
+  "target": 13159524910902495347,
+  "profile": 1369601567987815722,
+  "path": 8239622318827411246,
+  "deps": [
+    [4952115107791248386, "data_encoding", false, 7278469328680488731],
+    [10420560437213941093, "syn", false, 4137047972609504611]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/data-encoding-macro-internal-2f169e2cdb274484/dep-lib-data_encoding_macro_internal",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

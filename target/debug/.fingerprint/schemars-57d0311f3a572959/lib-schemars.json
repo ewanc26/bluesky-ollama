@@ -1,0 +1,26 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"default\", \"derive\", \"preserve_order\", \"schemars_derive\", \"std\"]",
+  "declared_features": "[\"_ui_test\", \"arrayvec07\", \"bigdecimal04\", \"bytes1\", \"chrono04\", \"default\", \"derive\", \"either1\", \"indexmap2\", \"jiff02\", \"preserve_order\", \"raw_value\", \"rust_decimal1\", \"schemars_derive\", \"semver1\", \"smallvec1\", \"smol_str02\", \"smol_str03\", \"std\", \"url2\", \"uuid1\"]",
+  "target": 11155677158530064643,
+  "profile": 8276155916380437441,
+  "path": 16278540725607082697,
+  "deps": [
+    [894917534355971740, "ref_cast", false, 14589185069842812762],
+    [6982418085031928086, "dyn_clone", false, 10946279085756159922],
+    [8578586876803397814, "serde_json", false, 15485458804253716067],
+    [10896592925039217470, "schemars_derive", false, 5903745491144073975],
+    [13548984313718623784, "serde", false, 8036415060051149022]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/schemars-57d0311f3a572959/dep-lib-schemars",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

@@ -1,0 +1,25 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[]",
+  "declared_features": "[\"default\", \"std\"]",
+  "target": 9141902243270665178,
+  "profile": 8276155916380437441,
+  "path": 8872045017173556522,
+  "deps": [
+    [3932411510935663021, "data_encoding_macro", false, 7784020813130345937],
+    [4558053804491279602, "base_x", false, 14436521016246778884],
+    [4952115107791248386, "data_encoding", false, 8414514461256049735],
+    [8542609559461827463, "base256emoji", false, 3740947878318280970]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/multibase-708ae2688d316024/dep-lib-multibase",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}

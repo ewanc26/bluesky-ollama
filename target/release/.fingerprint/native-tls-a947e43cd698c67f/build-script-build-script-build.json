@@ -1,0 +1,20 @@
+{
+  "rustc": 11744402056482654987,
+  "features": "[\"default\"]",
+  "declared_features": "[\"alpn\", \"alpn-accept\", \"default\", \"vendored\"]",
+  "target": 5408242616063297496,
+  "profile": 1369601567987815722,
+  "path": 6656402580509555046,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "release/.fingerprint/native-tls-a947e43cd698c67f/dep-build-script-build-script-build",
+        "checksum": false
+      }
+    }
+  ],
+  "rustflags": [],
+  "config": 8247474407144887393,
+  "compile_kind": 0
+}
