@@ -42,6 +42,7 @@ python src/main.py
 ```
 
 Does this on a loop:
+
 1. Logs into both accounts
 2. Fetches recent posts from the source
 3. Generates a new post with Ollama
