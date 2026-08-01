@@ -81,6 +81,13 @@ python src/main.py [-m MODEL_NAME] [--dry-run]
 
 **No posts generated** — Check the source account has posts and look at `log/general.log`
 
+## Support
+
+If you find this project useful, consider supporting its development:
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/ewancroft)
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub%20Sponsors-30363D?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/ewanc26)
+
 ## Licence
 
 AGPLv3 — see [LICENCE](LICENCE)
