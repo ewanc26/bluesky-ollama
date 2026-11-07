@@ -20,4 +20,4 @@ An AI-powered Bluesky bot that uses Ollama to generate posts based on content fr
 
 ## Recent history
 
-Sync AGENTS.md from zincfox; Sync AGENTS.md from zincfox; Sync CONTRIBUTING.md from zincfox; Sync CONTRIBUTING.md from zincfox; Symlink droid/opencode/qwen/rovodev skill dirs to .agents/skills
+Symlink droid/opencode/qwen/rovodev skill dirs to .agents/skills
