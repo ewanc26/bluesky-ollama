@@ -6,7 +6,7 @@ Guidance for AI coding agents working in **bluesky-ollama**.
 
 An AI-powered Bluesky bot that uses Ollama to generate posts based on content from a source account.
 
-- Language: Makefile
+- Language: Python
 - Default branch: main
 
 ## Working rules
