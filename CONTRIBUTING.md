@@ -28,4 +28,4 @@ Credentials live in `.env` (never committed): handles, app passwords, host URL, 
 
 ## Licence
 
-AGPL v3 (see [LICENCE](LICENCE)). Contributions are accepted under the same terms. Contributions are accepted under the same terms.
+AGPL v3 (see [LICENCE](LICENCE)). Contributions are accepted under the same terms.
