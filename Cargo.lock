@@ -161,6 +161,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "atrium-api"
+version = "0.26.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b0b9945dc5f78b415822cd89a5b5823da949df1c6b698fcd3f9aa3a6f6631d92"
+dependencies = [
+ "atrium-common",
+ "atrium-xrpc",
+ "chrono",
+ "http",
+ "ipld-core",
+ "langtag",
+ "regex",
+ "serde",
+ "serde_bytes",
+ "serde_json",
+ "thiserror 1.0.69",
+ "tokio",
+ "trait-variant",
+]
+
+[[package]]
 name = "atrium-common"
 version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -238,7 +259,7 @@ name = "bluesky-ollama"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "atrium-api",
+ "atrium-api 0.25.8",
  "bsky-sdk",
  "chrono",
  "clap",
@@ -258,12 +279,12 @@ dependencies = [
 
 [[package]]
 name = "bsky-sdk"
-version = "0.1.24"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e3bc207e44975454fd3339789a8137161cccd73ef9414e52f7e9f95e4cb0a9a"
+checksum = "004fd2f1c4c074449e6457ed632f597ead676181324893fb80f81e071a85d54c"
 dependencies = [
  "anyhow",
- "atrium-api",
+ "atrium-api 0.26.0",
  "atrium-xrpc-client",
  "chrono",
  "psl",
