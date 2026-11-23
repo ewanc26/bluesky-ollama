@@ -96,3 +96,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow and the checks required 
 ## Licence
 
 AGPLv3 — see [LICENCE](LICENCE)
+
+Copyright (C) 2025-2026 Ewan Croft (ewanc26).
