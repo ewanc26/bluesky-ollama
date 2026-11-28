@@ -6,7 +6,7 @@ Guidance for AI coding agents working in **bluesky-ollama**.
 
 An AI-powered Bluesky bot that uses Ollama to generate posts based on content from a source account.
 
-- Language: Makefile
+- Language: Python
 - Default branch: main
 
 ## Working rules
@@ -29,6 +29,7 @@ Apply this to new files, and to a file you are already restructuring. Don't rena
 Symlink droid/opencode/qwen/rovodev skill dirs to .agents/skills
 
 <!-- allowed-agents -->
+
 ## Allowed agents
 
 Only **Claude** (Anthropic) and **Mistral** (Mistral AI) may be used as coding agents in this repository. This rule supersedes any earlier agent-attribution guidance in this file.

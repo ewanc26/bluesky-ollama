@@ -36,6 +36,10 @@ pub fn validate_content(text: &str, char_limit: usize) -> (bool, Option<String>)
         return (false, Some("Content contains excessive punctuation".to_string()));
     }
 
+    if text.matches("...").count() > 3 {
+        return (false, Some("Content contains excessive ellipses".to_string()));
+    }
+
     if text.len() > 20 && text.chars().all(|c| !c.is_alphabetic() || c.is_uppercase()) {
         return (false, Some("Content is all caps".to_string()));
     }
