@@ -140,6 +140,10 @@ def validate_content(text, char_limit=300):
     if text.count('!') > 3 or text.count('?') > 3:
         return False, "Content contains excessive punctuation"
     
+    # Reject posts stringed together with too many ellipses
+    if text.count('...') > 2:
+        return False, "Content contains excessive ellipsis"
+
     # Check for all caps (excluding short posts)
     if len(text) > 20 and text.isupper():
         return False, "Content is all caps"
